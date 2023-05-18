@@ -24,7 +24,7 @@ async function main() {
 
   const endpoint = process.env.NODE_ENV === 'production'
     ? Routes.applicationCommands(currentUser.id)
-    : Routes.applicationGuildCommands(currentUser.id, keys.testGuild)
+    : Routes.applicationGuildCommands(currentUser.id, "1046513535955501176")
 
   rest.put(endpoint, { body: [] })
     .catch(console.error);
@@ -41,7 +41,7 @@ main()
     // Check the environment for if the bot is in production mode (available to public)
     const response = process.env.NODE_ENV === 'production'
       ? `Successfully released commands in production as ${tag}!`
-      : `Successfully registered commands for development in ${keys.testGuild} as ${tag}!`
+      : `Successfully registered commands for development in 1046513535955501176 as ${tag}!`
 
     console.log(response)
   })

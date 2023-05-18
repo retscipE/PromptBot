@@ -2,4 +2,5 @@
 export interface Keys {
     clientToken: string
     mongoDBUri: string
+    openAIKey: string
 }

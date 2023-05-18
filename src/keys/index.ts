@@ -3,6 +3,7 @@ import { Keys } from '../types'
 const keys: Keys = {
     clientToken: process.env.CLIENT_TOKEN ?? 'nil',
     mongoDBUri: process.env.MONGO_DB ?? 'nil',
+    openAIKey : process.env.OPENAI_KEY ?? 'nil',
 }
 
 // Check if an environment variable is defined

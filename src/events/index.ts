@@ -1,4 +1,5 @@
 import { Event } from '../types'
+import LogEvents from './LogEvents'
 import ClientEvents from './ClientEvents'
 import MessageEvents from './MessageEvents'
 
